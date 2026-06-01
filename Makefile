@@ -1,0 +1,29 @@
+NAME			= libft.a
+CC				= gcc
+CFLAGS			= -Wall -Wextra -Werror
+AR				= ar
+ARFLAGS			= -rcs
+INCLUDES 		= -Iincludes
+SRCS_DIR		= .
+SRCS			= 	$(SRCS_DIR)/ft_isalpha.c $(SRCS_DIR)/ft_isdigit.c $(SRCS_DIR)/ft_isalnum.c
+OBJS_DIR		= $(SRCS_DIR)
+OBJS			= $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
+RM				= rm -f
+
+all : $(NAME)
+
+$(NAME) : $(OBJS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
+
+$(OBJS_DIR)/%.o : $(SRCS_DIR)/%.c
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+clean :
+	$(RM) $(OBJS)
+
+fclean : clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re 
