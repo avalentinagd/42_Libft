@@ -6,12 +6,21 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/19 21:57:46 by angalleg          #+#    #+#             */
-/*   Updated: 2026/06/20 00:33:47 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/06/25 17:02:37 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include <stdio.h>
+
+size_t	ft_strlen(const char *s)
+{
+	const char	*start;
+
+	start = s;
+	while (*s)
+		s++;
+	return (s - start);
+}
 
 char	*ft_strchr(const char *s, int c)
 {
