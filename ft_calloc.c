@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/01 22:26:52 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 06:02:56 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 23:31:50 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,29 +34,29 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-#include <stdio.h>
-int	main(void)
-{
-	size_t nmemb;
-	size_t size;
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	size_t nmemb;
+// 	size_t size;
 
-	// 1. Caso Normal: ¿Ambas devuelven un puntero válido?
-	nmemb = 5;
-	size = sizeof(int);
-	printf("Normal   -> ft: %p | original: %p\n", 
-	    	ft_calloc(nmemb, size), calloc(nmemb, size));
+// 	// 1. Caso Normal: ¿Ambas devuelven un puntero válido?
+// 	nmemb = 5;
+// 	size = sizeof(int);
+// 	printf("Normal   -> ft: %p | original: %p\n", 
+// 	    	ft_calloc(nmemb, size), calloc(nmemb, size));
 
-	// 2. Caso Cero: ¿Cómo reaccionan ante un tamaño de 0?
-	nmemb = 0;
-	size = 10;
-	printf("Con 0    -> ft: %p | original: %p\n", 
-		    ft_calloc(nmemb, size), calloc(nmemb, size));
+// 	// 2. Caso Cero: ¿Cómo reaccionan ante un tamaño de 0?
+// 	nmemb = 0;
+// 	size = 10;
+// 	printf("Con 0    -> ft: %p | original: %p\n", 
+// 		    ft_calloc(nmemb, size), calloc(nmemb, size));
 
-	// 3. Caso Overflow: ¿Detectan el desbordamiento?
-	nmemb = (size_t)-1 / 2;
-	size = 4;
-	printf("Overflow -> ft: %p | original: %p\n", 
-		    ft_calloc(nmemb, size), calloc(nmemb, size));
+// 	// 3. Caso Overflow: ¿Detectan el desbordamiento?
+// 	nmemb = (size_t)-1 / 2;
+// 	size = 4;
+// 	printf("Overflow -> ft: %p | original: %p\n", 
+// 		    ft_calloc(nmemb, size), calloc(nmemb, size));
 
-	return (0);
-}
+// 	return (0);
+// }

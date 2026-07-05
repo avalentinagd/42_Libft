@@ -27,20 +27,20 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void)
-{
-	const unsigned char	src[] = "Hola mundo";
-	unsigned char		ft[50];
-	unsigned char		lib[50];
+// int	main(void)
+// {
+// 	const unsigned char	src[] = "Hola mundo";
+// 	unsigned char		ft[50];
+// 	unsigned char		lib[50];
 
-	ft_memcpy(ft, src, 11);
-	memcpy(lib, src, 11);
-	if (memcmp(ft, lib, 11) == 0)
-		printf("OK\n");
-	else
-		printf("KO\n");
-	return (0);
-}
+// 	ft_memcpy(ft, src, 11);
+// 	memcpy(lib, src, 11);
+// 	if (memcmp(ft, lib, 11) == 0)
+// 		printf("OK\n");
+// 	else
+// 		printf("KO\n");
+// 	return (0);
+// }
 
 /* I. Copia básica de una cadena */
 	// char src[] = "Hola mundo";

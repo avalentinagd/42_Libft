@@ -26,27 +26,27 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
 
-int	main(void)
-{
-	// strings iguales
-	printf("Mi función: %d\n", ft_strncmp("hola", "hola", 3));
-	printf("Original  : %d\n\n", strncmp("hola", "hola", 3));
+// int	main(void)
+// {
+// 	// strings iguales
+// 	printf("Mi función: %d\n", ft_strncmp("hola", "hola", 3));
+// 	printf("Original  : %d\n\n", strncmp("hola", "hola", 3));
 
-	// n = 0
-	printf("Mi función: %d\n", ft_strncmp("hola", "adios", 0));
-	printf("Original  : %d\n\n", strncmp("hola", "adios", 0));
+// 	// n = 0
+// 	printf("Mi función: %d\n", ft_strncmp("hola", "adios", 0));
+// 	printf("Original  : %d\n\n", strncmp("hola", "adios", 0));
 
-	// un str mas corto de n
-	printf("Mi función: %d\n", ft_strncmp("123", "12345", 5));
-	printf("Original  : %d\n\n", strncmp("123", "12345", 5));
+// 	// un str mas corto de n
+// 	printf("Mi función: %d\n", ft_strncmp("123", "12345", 5));
+// 	printf("Original  : %d\n\n", strncmp("123", "12345", 5));
 
-	// caractres especiales / ASCII extendido
-	printf("Mi función: %d\n", ft_strncmp("\200", "\0", 1));
-	printf("Original  : %d\n\n", strncmp("\200", "\0", 1));
+// 	// caractres especiales / ASCII extendido
+// 	printf("Mi función: %d\n", ft_strncmp("\200", "\0", 1));
+// 	printf("Original  : %d\n\n", strncmp("\200", "\0", 1));
 
-	// cadenas vacías
-	printf("Mi función: %d\n", ft_strncmp("", "", 3));
-	printf("Original  : %d\n\n", strncmp("", "", 3));
+// 	// cadenas vacías
+// 	printf("Mi función: %d\n", ft_strncmp("", "", 3));
+// 	printf("Original  : %d\n\n", strncmp("", "", 3));
 
-	return (0);
-}
+// 	return (0);
+// }

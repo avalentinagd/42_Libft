@@ -10,18 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
-
-size_t	ft_strlen(const char *str)
-{
-	const char	*start;
-
-	start = str;
-	while (*str)
-		str++;
-	return (str - start);
-}
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -41,41 +30,41 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (src_len);
 }
 
-int	main(void)
-{
-    {
-        size_t result1;
-        char dst1[6];
-        result1 = ft_strlcpy(dst1, "abcdef", -6);
-        printf("%s\n", "CASO 1: dst1[6], src = 'abcdef', size = 6");
-        printf("%ld\n", result1);
-        printf("%s\n", &dst1[4]);
-        printf("%d\n\n", dst1[5]);
-    }
-    {
-        size_t result1;
-        char dst11[6];
-        result1 = strlcpy(dst11, "abcdef", -6);
-        printf("%s\n", "CASO 1: dst11[6], src = 'abcdef', size = 6");
-        printf("%ld\n", result1);
-        printf("%s\n", &dst11[4]);
-        printf("%d\n\n\n", dst11[5]);
-    }
-    {
-        size_t result3;
-        char dst2[1];
-        result3 = ft_strlcpy(dst2, "Hola", 1);
-        printf("%s\n", "CASO size = 1: dst2[1], src = 'Hola', size = 1");
-        printf("%ld\n", result3);
-        printf("%d\n\n", dst2[0]);
-    }
-    {
-        size_t result3;
-        char dst22[1];
-        result3 = strlcpy(dst22, "Hola", 1);
-        printf("%s\n", "CASO size = 1: dst22[1], src = 'Hola', size = 1");
-        printf("%ld\n", result3);
-        printf("%d\n", dst22[0]);
-    }
-    return (0);
-}
+// int	main(void)
+// {
+//     {
+//         size_t result1;
+//         char dst1[6];
+//         result1 = ft_strlcpy(dst1, "abcdef", -6);
+//         printf("%s\n", "CASO 1: dst1[6], src = 'abcdef', size = 6");
+//         printf("%ld\n", result1);
+//         printf("%s\n", &dst1[4]);
+//         printf("%d\n\n", dst1[5]);
+//     }
+//     {
+//         size_t result1;
+//         char dst11[6];
+//         result1 = strlcpy(dst11, "abcdef", -6);
+//         printf("%s\n", "CASO 1: dst11[6], src = 'abcdef', size = 6");
+//         printf("%ld\n", result1);
+//         printf("%s\n", &dst11[4]);
+//         printf("%d\n\n\n", dst11[5]);
+//     }
+//     {
+//         size_t result3;
+//         char dst2[1];
+//         result3 = ft_strlcpy(dst2, "Hola", 1);
+//         printf("%s\n", "CASO size = 1: dst2[1], src = 'Hola', size = 1");
+//         printf("%ld\n", result3);
+//         printf("%d\n\n", dst2[0]);
+//     }
+//     {
+//         size_t result3;
+//         char dst22[1];
+//         result3 = strlcpy(dst22, "Hola", 1);
+//         printf("%s\n", "CASO size = 1: dst22[1], src = 'Hola', size = 1");
+//         printf("%ld\n", result3);
+//         printf("%d\n", dst22[0]);
+//     }
+//     return (0);
+// }

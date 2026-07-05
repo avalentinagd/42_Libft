@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 18:31:00 by angalleg          #+#    #+#             */
-/*   Updated: 2026/06/11 00:42:03 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 23:32:57 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,28 +34,28 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void)
-{
-	{
-		char	str1[] = "AAAA";
-		char	str2[] = "BBBB";
-		char	*dest;
+// int	main(void)
+// {
+// 	{
+// 		char	str1[] = "AAAA";
+// 		char	str2[] = "BBBB";
+// 		char	*dest;
 
-		size_t n = 2;
-		dest = ft_memmove(str2, str1, n);
-		printf("Caso ft_memmove: %s\n", dest);
-	}
-	{
-		char	str1[] = "AAAA";
-		char	str2[] = "BBBB";
-		char	*dest;
+// 		size_t n = 2;
+// 		dest = ft_memmove(str2, str1, n);
+// 		printf("Caso ft_memmove: %s\n", dest);
+// 	}
+// 	{
+// 		char	str1[] = "AAAA";
+// 		char	str2[] = "BBBB";
+// 		char	*dest;
 
-		size_t n = 2;
-		dest = memmove(str2, str1, n);
-		printf("Caso memmove: %s\n", dest);
-	}
-	return (0);
-}
+// 		size_t n = 2;
+// 		dest = memmove(str2, str1, n);
+// 		printf("Caso memmove: %s\n", dest);
+// 	}
+// 	return (0);
+// }
 
 /* Overload */
 // char str[] = "abcdef";

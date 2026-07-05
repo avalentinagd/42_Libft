@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 20:09:01 by angalleg          #+#    #+#             */
-/*   Updated: 2026/06/01 23:48:00 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 23:32:05 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	ft_isalpha('a');
-	printf("%d", ft_isalpha('a'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_isalpha('a');
+// 	printf("%d", ft_isalpha('a'));
+// 	return (0);
+// }

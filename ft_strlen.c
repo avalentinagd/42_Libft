@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:50:29 by angalleg          #+#    #+#             */
-/*   Updated: 2026/06/19 18:31:28 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 21:32:39 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ size_t	ft_strlen(const char *s)
 	return (s - start);
 }
 
-int	main(void)
-{
-	printf("%zu\n", ft_strlen("hola"));
-	printf("%zu\n", ft_strlen("hello world"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%zu\n", ft_strlen("hola"));
+// 	printf("%zu\n", ft_strlen("hello world"));
+// 	return (0);
+// }

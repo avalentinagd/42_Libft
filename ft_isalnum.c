@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ isalnum.c                                      :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 23:36:32 by angalleg          #+#    #+#             */
-/*   Updated: 2026/06/01 23:55:14 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 23:31:59 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d\n", ft_isalnum('a'));
-	printf("%d\n", ft_isalnum('1'));
-	printf("%d\n", ft_isalnum('!'));
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalnum('a'));
+// 	printf("%d\n", ft_isalnum('1'));
+// 	printf("%d\n", ft_isalnum('!'));
+// }

@@ -26,10 +26,10 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int	main(void)
-{
-	char	buffer[10] = "holA MUNDO";
+// int	main(void)
+// {
+// 	char	buffer[10] = "holA MUNDO";
 
-	ft_bzero(buffer, 2);
-	return (0);
-}
+// 	ft_bzero(buffer, 2);
+// 	return (0);
+// }

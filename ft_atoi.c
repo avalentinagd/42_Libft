@@ -6,12 +6,11 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 18:03:55 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/01 20:54:46 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 23:23:38 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

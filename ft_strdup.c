@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 04:03:15 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 06:16:42 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/02 21:33:02 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,28 +35,28 @@ char	*ft_strdup(const char *s)
 	return (s2);
 }
 
-#include <string.h>
-#include <stdio.h>
-int	main(void)
-{
-	char	*str_ft;
-	char	*str_original;
+// #include <string.h>
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char	*str_ft;
+// 	char	*str_original;
 
-	// Caso 1: String normal estándar
-	str_ft = ft_strdup("Hola 42!");
-	str_original = strdup("Hola 42!");
-	printf("Normal -> ft: %s (%p) | original: %s (%p)\n", 
-		str_ft, str_ft, str_original, str_original);
-	// free(str_ft);
-	// free(str_original);
+// 	// Caso 1: String normal estándar
+// 	str_ft = ft_strdup("Hola 42!");
+// 	str_original = strdup("Hola 42!");
+// 	printf("Normal -> ft: %s (%p) | original: %s (%p)\n", 
+// 		str_ft, str_ft, str_original, str_original);
+// 	// free(str_ft);
+// 	// free(str_original);
 
-	// Caso 2: String vacío (buen manejo del \0)
-	str_ft = ft_strdup("");
-	str_original = strdup("");
-	printf("Vacío  -> ft: \"%s\" (%p) | original: \"%s\" (%p)\n", 
-		str_ft, str_ft, str_original, str_original);
-	// free(str_ft);
-	// free(str_original);
+// 	// Caso 2: String vacío (buen manejo del \0)
+// 	str_ft = ft_strdup("");
+// 	str_original = strdup("");
+// 	printf("Vacío  -> ft: \"%s\" (%p) | original: \"%s\" (%p)\n", 
+// 		str_ft, str_ft, str_original, str_original);
+// 	// free(str_ft);
+// 	// free(str_original);
 
-	return (0);
-}
+// 	return (0);
+// }
