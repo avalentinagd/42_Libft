@@ -6,11 +6,9 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 20:09:01 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 23:32:05 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 23:40:38 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isalpha(int c)
 {
@@ -19,6 +17,7 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
+//#include <stdio.h>
 // int	main(void)
 // {
 // 	ft_isalpha('a');
