@@ -6,17 +6,16 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 18:46:49 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 23:33:04 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:12:46 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }
-
 
 // #include <fcntl.h> // Para 'open' y los modos de archivos
 // #include <stdio.h>
@@ -42,11 +41,11 @@ void ft_putchar_fd(char c, int fd)
 // 		printf("Error abriendo el archivo de prueba.\n");
 // 		return (1);
 // 	}
-	
+
 // 	// Escribimos una 'C' dentro del archivo, ¡no saldrá en la terminal!
 // 	ft_putchar_fd('C', fd_archivo);
 // 	close(fd_archivo);
 
-// 	printf("Test 3 (Archivo) -> Se ha creado 'test.txt'. Ábrelo, debe tener una 'C'.\n");
+// 	printf("Test 3 (Archivo) -> Crea 'test.txt' que contiene una 'C'.\n");
 // 	return (0);
 // }

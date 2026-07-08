@@ -17,7 +17,11 @@ SRCS			= 	$(SRCS_DIR)/ft_isalpha.c $(SRCS_DIR)/ft_isdigit.c \
 					$(SRCS_DIR)/ft_memcmp.c $(SRCS_DIR)/ft_strnstr.c \
 					$(SRCS_DIR)/ft_atoi.c $(SRCS_DIR)/ft_calloc.c \
 					$(SRCS_DIR)/ft_strdup.c $(SRCS_DIR)/ft_substr.c \
-					$(SRCS_DIR)/ft_strjoin.c $(SRCS_DIR)/ft_strrchr.c 
+					$(SRCS_DIR)/ft_strjoin.c $(SRCS_DIR)/ft_strtrim.c \
+					$(SRCS_DIR)/ft_split.c $(SRCS_DIR)/ft_itoa.c \
+					$(SRCS_DIR)/ft_strmapi.c $(SRCS_DIR)/ft_striteri.c \
+					$(SRCS_DIR)/ft_putchar_fd.c $(SRCS_DIR)/ft_putstr_fd.c \
+					$(SRCS_DIR)/ft_putendl_fd.c $(SRCS_DIR)/ft_putnbr_fd.c \
 OBJS_DIR		= $(SRCS_DIR)
 OBJS			= $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
 RM				= rm -f

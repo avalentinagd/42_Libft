@@ -6,15 +6,15 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:50:38 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/06 00:45:53 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:17:15 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-    long	nbr;
+	long	nbr;
 
 	nbr = n;
 	if (nbr == -2147483648)

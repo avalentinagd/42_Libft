@@ -6,31 +6,32 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:50:38 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/06 00:45:53 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:48:39 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
-    size_t len_s;
-    unsigned int i;
-    char *new_str;
 
-    if (!s || !f)
-        return (NULL);
-    len_s = ft_strlen(s);
-    new_str = malloc(len_s + 1);
-    if (!new_str)
-        return(NULL);
-    i = 0;
-    while (s[i])
-    {
-        new_str[i] = f(i,s[i]);
-        i++;
-    }
-    new_str[i] = '\0';
-    return(new_str);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	unsigned int	i;
+	char			*new_str;
+	size_t			len_s;
+
+	if (!s || !f)
+		return (NULL);
+	len_s = ft_strlen(s);
+	new_str = malloc(len_s + 1);
+	if (!new_str)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		new_str[i] = f(i, s[i]);
+		i++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
 
 // #include <stdio.h>
@@ -53,7 +54,8 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 // 	// Test 2: Cadena Vacía
 // 	res = ft_strmapi("", test_transform);
-// 	printf("Test 2 (Vacía)   -> Esperado: \"\"         | Obtenido: \"%s\"\n", res);
+// 	printf("Test 2 (Vacía)   -> Esperado: \"\"         | Obtenido: \"%s\"\n",
+// 		 res);
 // 	free(res);
 
 // 	// Test 3: Protección NULL para la cadena

@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 21:42:47 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 23:41:26 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:22:46 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    unsigned int i;
+	unsigned int	i;
 
-    if (!s || !f)
-        return ;
-    i = 0;
-    while (s[i])
-    {
-        f(i, &s[i]);
-        i++;
-    }
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
 // #include <stdio.h>
@@ -37,7 +37,7 @@ void    ft_striteri(char *s, void (*f)(unsigned int, char*))
 // {
 // 	// Test 1: Caso normal
 // 	char str[] = "hola";
-	
+
 // 	ft_striteri(str, advance_letter);
 // 	printf("Test 1 (Normal) -> Esperado: ipmb | Obtenido: %s\n", str);
 

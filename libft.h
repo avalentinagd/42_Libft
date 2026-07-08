@@ -6,18 +6,18 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 17:32:25 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/05 20:47:26 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:53:52 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
+# define LIBFT_H
 
-
-#include <stddef.h>
-#include <stdlib.h>
-//#include <bsd/string.h>
-#include <string.h>
-#include <unistd.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <bsd/string.h>
+# include <string.h>
+# include <unistd.h>
 
 /* ctype */
 int		ft_isalnum(int c);
@@ -49,15 +49,14 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-char **ft_split(char const *s, char c);
-char *ft_itoa(int n);
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void ft_striteri(char *s, void (*f)(unsigned int, char*));
-void ft_putchar_fd(char c, int fd);
-void ft_putstr_fd(char *s, int fd);
-void ft_putendl_fd(char *s, int fd);
-void ft_putnbr_fd(int n, int fd);
-
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 /* stdlib */
 int		ft_atoi(const char *str);

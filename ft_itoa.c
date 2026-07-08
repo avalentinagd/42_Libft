@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:50:38 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/06 00:45:53 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/08 22:04:06 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	get_num_len(int n)
 
 	len = 0;
 	if (n <= 0)
-		len = 1; // Cuenta el 0, o deja espacio para el signo '-'
+		len = 1;
 	while (n != 0)
 	{
 		len++;
@@ -27,32 +27,32 @@ static int	get_num_len(int n)
 	return (len);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    int len_n;
-    char *mem_str;
+	char	*mem_str;
+	int		len_n;
 
-    if (n == -2147483648)
-        return (ft_strdup("-2147483648"));
-    len_n = get_num_len(n);
-    mem_str = malloc(len_n + 1);
-    if (!mem_str)
-        return (NULL);
-    mem_str[len_n] = '\0';
-    if (n == 0)
-        mem_str[0] = '0';
-    if (n < 0)
-    {
-        mem_str[0] = '-';
-        n = -n;
-    }
-    while (n != 0)
-    {
-        len_n--;
-        mem_str[len_n] = (n % 10) + '0';
-        n = n / 10;
-    }
-    return(mem_str);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	len_n = get_num_len(n);
+	mem_str = malloc(len_n + 1);
+	if (!mem_str)
+		return (NULL);
+	mem_str[len_n] = '\0';
+	if (n == 0)
+		mem_str[0] = '0';
+	if (n < 0)
+	{
+		mem_str[0] = '-';
+		n = -n;
+	}
+	while (n != 0)
+	{
+		len_n--;
+		mem_str[len_n] = (n % 10) + '0';
+		n = n / 10;
+	}
+	return (mem_str);
 }
 
 // #include <stdio.h>
