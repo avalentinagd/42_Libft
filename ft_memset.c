@@ -10,15 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*dest_str;
 	unsigned char	dest_byte;
 	size_t			i;
-
+	
 	dest_str = (unsigned char *)s;
 	dest_byte = (unsigned char)c;
 	i = 0;
@@ -30,6 +29,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	char	buffer[10] = "holA MUNDO";

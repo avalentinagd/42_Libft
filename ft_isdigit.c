@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
@@ -19,6 +18,7 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	printf("%d", ft_isdigit('5'));

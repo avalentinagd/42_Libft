@@ -10,32 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*s;
 	unsigned char		*d;
-
+	
 	if (dest == NULL && src == NULL)
-		return (NULL);
-	s = (const unsigned char *)src;
-	d = (unsigned char *)dest;
-	if (*d > *s && d < s + n)
-	{
-		while (n--)
-			d[n] = s[n];
-	}
-	else
-	{
-		while (n--)
-			*d++ = *s++;
-	}
-	return (dest);
+	return (NULL);
+s = (const unsigned char *)src;
+d = (unsigned char *)dest;
+if (*d > *s && d < s + n)
+{
+	while (n--)
+	d[n] = s[n];
+}
+else
+{
+	while (n--)
+	*d++ = *s++;
+}
+return (dest);
 }
 
+// #include <string.h>
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	{

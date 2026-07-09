@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -33,6 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
+// #include <stdio.h>
 // int main (void)
 // {
 //     char str[] = "Hola Mundo, 42 Madrid!";
