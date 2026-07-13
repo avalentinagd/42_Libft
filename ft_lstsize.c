@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-    int count;
+	int	count;
 
-    count = 0;
-    while (lst != NULL)
-    {
-        count++;
-        lst = lst->next;
-    }
-    return (count);
+	count = 0;
+	while (lst != NULL)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }
 
 // #include <stdio.h>
@@ -34,7 +34,8 @@ int ft_lstsize(t_list *lst)
 // 	t_list	*lista_vacia;
 
 // 	lista_vacia = NULL;
-// 	printf("CASO 1 Tamaño lista vacía: %d (Debe ser 0)\n", ft_lstsize(lista_vacia));
+// 	printf("CASO 1 Tamaño lista vacía: %d (Debe ser 0)\n", 
+//			ft_lstsize(lista_vacia));
 
 // 	nodo1 = ft_lstnew("Uno");
 // 	nodo2 = ft_lstnew("Dos");
@@ -44,7 +45,8 @@ int ft_lstsize(t_list *lst)
 // 	nodo2->next = nodo3;
 // 	nodo3->next = NULL;
 
-// 	printf("CASO 2 Tamaño de la lista (de 3 nodos): %d (Debe ser 3)\n", ft_lstsize(nodo1));
+// 	printf("CASO 2 Tamaño de la lista (de 3 nodos): %d (Debe ser 3)\n", 
+//			ft_lstsize(nodo1));
 
 // 	free(nodo1);
 // 	free(nodo2);

@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-    if (!lst)
-        return (NULL);
-    while (lst->next != NULL)
-    {
-        lst = lst->next;
-    }
-    return (lst); 
+	if (!lst)
+		return (NULL);
+	while (lst->next != NULL)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
 
 // #include <stdio.h>
@@ -44,9 +44,11 @@ t_list *ft_lstlast(t_list *lst)
 
 // 	// Probamos la función
 // 	last = ft_lstlast(node1);
-	
-// 	printf("Contenido del último nodo: %s (Debe ser Tres)\n", (char *)last->content);
-// 	printf("El siguiente del último es NULL?: %s\n", (last->next == NULL) ? "SI" : "NO");
+
+// 	printf("Contenido del último nodo: %s (Debe ser Tres)\n", 
+//			(char *)last->content);
+// 	printf("El siguiente del último es NULL?: %s\n", 
+//			(last->next == NULL) ? "SI" : "NO");
 
 // 	free(node1);
 // 	free(node2);

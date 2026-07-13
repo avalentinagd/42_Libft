@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list	*nueva_lista;
+	t_list	*nueva_lista;
 	t_list	*nuevo_nodo;
 	void	*contenido_nuevo;
 
@@ -64,8 +64,10 @@ t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 // 	t_list *map = ft_lstmap(orig, f_duplicar, f_del);
 
 // 	// Imprimir resultados
-// 	printf("Orig: %d -> %d\n", *(int *)orig->content, *(int *)orig->next->content);
-// 	printf("Map:  %d -> %d\n", *(int *)map->content, *(int *)map->next->content);
+// 	printf("Orig: %d -> %d\n", *(int *)orig->content, 
+//			*(int *)orig->next->content);
+// 	printf("Map:  %d -> %d\n", *(int *)map->content, 
+//			*(int *)map->next->content);
 
 // 	// Limpieza minimalista manual
 // 	free(map->next->content);

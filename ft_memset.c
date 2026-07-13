@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 18:46:49 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/08 23:42:48 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/13 22:12:48 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char	*dest_str;
 	unsigned char	dest_byte;
 	size_t			i;
-	
+
 	dest_str = (unsigned char *)s;
 	dest_byte = (unsigned char)c;
 	i = 0;

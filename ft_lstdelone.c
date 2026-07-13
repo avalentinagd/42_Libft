@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;
@@ -35,7 +35,7 @@ void ft_lstdelone(t_list *lst, void (*del)(void *))
 
 // 	// 2. Probando la función
 // 	ft_lstdelone(nodo, del_content);
-	
+
 // 	// 3. Probando seguridad contra NULL
 // 	ft_lstdelone(NULL, del_content);
 

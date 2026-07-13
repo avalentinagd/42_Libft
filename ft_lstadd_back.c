@@ -12,21 +12,20 @@
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-    t_list *last_node;
+	t_list	*last_node;
 
-    if (!lst || !new)
-        return ;
-    if (!*lst)
-    {
-        *lst = new;
-        return ;
-    }
-    last_node = ft_lstlast(*lst);
-    last_node->next = new;
+	if (!lst || !new)
+		return ;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	last_node = ft_lstlast(*lst);
+	last_node->next = new;
 }
-
 
 // #include <stdio.h>
 // int	main(void)
@@ -45,10 +44,12 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 
 // 	// TEST 2: Añadimos al final node_world, detrás de node_hello)
 // 	ft_lstadd_back(&list, node_world);
-// 	printf("2. Segundo nodo (debe ser Mundo): %s\n", (char *)list->next->content);
+// 	printf("2. Segundo nodo (debe ser Mundo): %s\n", 
+// 			(char *)list->next->content);
 
 // 	// TEST 3: Comprobar que el final vuelve a ser NULL
-// 	printf("3. ¿El siguiente del último es NULL?: %s\n", (list->next->next == NULL) ? "SI" : "NO");
+// 	printf("3. ¿El siguiente del último es NULL?: %s\n", 
+// 			(list->next->next == NULL) ? "SI" : "NO");
 
 // 	free(node_hello);
 // 	free(node_world);

@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 18:31:00 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/08 23:48:47 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/13 22:12:31 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*s;
 	unsigned char		*d;
-	
+
 	if (dest == NULL && src == NULL)
 		return (NULL);
 	s = (const unsigned char *)src;
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		while (n--)
-		*d++ = *s++;
+			*d++ = *s++;
 	}
 	return (dest);
 }

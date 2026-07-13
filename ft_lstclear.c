@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*aux;
 
@@ -40,7 +40,7 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
 
 // 	nodo1->content = malloc(10); // Reservamos 10 bytes de memoria "vacía"
 // 	nodo2->content = malloc(10); // Reservamos 10 bytes de memoria "vacía"
-	
+
 // 	nodo1->next = nodo2;
 // 	nodo2->next = NULL;
 
@@ -54,10 +54,10 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
 
 // 	// Protecciones contra NULL
 // 	ft_lstclear(NULL, free_content);
-	
+
 // 	t_list *lista_vacia = NULL;
 // 	ft_lstclear(&lista_vacia, free_content);
-	
+
 // 	printf("Test 2: Protecciones contra NULL: OK\n");
 
 // 	return (0);

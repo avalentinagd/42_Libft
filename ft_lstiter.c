@@ -17,10 +17,10 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	if (!lst || !f)
 		return ;
 	while (lst)
-		{
-			f(lst->content);
-			lst = lst->next;
-		}
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 
 // #include <stdio.h>
@@ -47,9 +47,11 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // 	nodo2->content = &letra2;
 // 	nodo2->next = NULL;
 
-// 	printf("Antes:   %c y %c\n", *(char *)nodo1->content, *(char *)nodo2->content);
+// 	printf("Antes:   %c y %c\n", *(char *)nodo1->content, 
+//			*(char *)nodo2->content);
 // 	ft_lstiter(nodo1, f_uppercase);
-// 	printf("Después: %c y %c \n", *(char *)nodo1->content, *(char *)nodo2->content);
+// 	printf("Después: %c y %c \n", *(char *)nodo1->content, 
+//			*(char *)nodo2->content);
 
 // 	free(nodo1);
 // 	free(nodo2);
