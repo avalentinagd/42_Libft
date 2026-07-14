@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 17:32:25 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/13 21:24:54 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/14 20:50:17 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stddef.h>
 # include <stdlib.h>
-# include <bsd/string.h>
-# include <string.h>
 # include <unistd.h>
 
 typedef struct s_list

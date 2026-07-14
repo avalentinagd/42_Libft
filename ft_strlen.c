@@ -6,7 +6,7 @@
 /*   By: angalleg <angalleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:50:29 by angalleg          #+#    #+#             */
-/*   Updated: 2026/07/02 21:32:39 by angalleg         ###   ########.fr       */
+/*   Updated: 2026/07/14 23:25:54 by angalleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	const char	*start;
+	size_t	i;
 
-	start = s;
-	while (*s)
-		s++;
-	return (s - start);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
 
 // #include <stdio.h>
